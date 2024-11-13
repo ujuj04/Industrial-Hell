@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 102
+  controlID: 104
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 348.8
     height: 516
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 349.59998
     height: 764.8
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -327,7 +327,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Material
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -337,16 +337,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Material
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Geo\Documents\GitHub\Industrial-Hell\Industrial Hell
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 16b30000
-    m_LastClickedID: 45846
-    m_ExpandedIDs: 000000004ab1000000ca9a3b
+    m_SelectedIDs: feb30000
+    m_LastClickedID: 46078
+    m_ExpandedIDs: 000000004eb10000f6b2000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -375,7 +375,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004ab10000
+    m_ExpandedIDs: 000000004eb10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -472,9 +472,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 00fbffff
+      m_SelectedIDs: 7addffff
+      m_LastClickedID: -8838
+      m_ExpandedIDs: ae10ffff56dfffff00fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1770,9 +1770,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 3.0060444, y: 4.072214, z: -1.5197405}
+    m_Target: {x: 2.9532032, y: 8.992304, z: 4.468134}
     speed: 2
-    m_Value: {x: 3.0060444, y: 4.072214, z: -1.5197405}
+    m_Value: {x: 2.9532032, y: 8.992304, z: 4.468134}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1818,20 +1818,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.16852793, y: 0.5098179, z: -0.10260735, w: -0.8373527}
+    m_Target: {x: -0.13124411, y: 0.6812195, z: -0.1260904, w: -0.7091739}
     speed: 2
-    m_Value: {x: -0.1685276, y: 0.50981694, z: -0.10260715, w: -0.8373511}
+    m_Value: {x: -0.13123679, y: 0.6811815, z: -0.12608337, w: -0.70913434}
   m_Size:
-    m_Target: 5.0568547
+    m_Target: 5.4841127
     speed: 2
-    m_Value: 5.0568547
+    m_Value: 5.4841127
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 6.114769
-    m_SpeedNormalized: 0.4903175
+    m_Speed: 0.87778866
+    m_SpeedNormalized: 0.07031748
     m_SpeedMin: 0.001
     m_SpeedMax: 12.47
     m_EasingEnabled: 1
@@ -1977,9 +1977,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 905.5
-    width: 1584.5
-    height: 313.5
+    y: 595.2
+    width: 1185.4
+    height: 222.79999
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
