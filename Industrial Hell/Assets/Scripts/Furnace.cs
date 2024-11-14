@@ -27,11 +27,5 @@ public class Furnace : MonoBehaviour
 
 
         temperatureValueText.text = Convert.ToUInt32(temperature).ToString();
-        Debug.Log(temperature);
-
     }
-
-
-
-
 }
