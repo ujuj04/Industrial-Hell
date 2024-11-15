@@ -4,15 +4,17 @@ using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour
 {
-    Outline outline;
+    MeshRenderer objectMesh;
+    Material saveMaterial;
+    public Material highlightMaterial;
     public string message;
 
     public UnityEvent onInteraction;
 
     private void Start()
     {
-        outline = GetComponent<Outline>();
-        outline.enabled = false;
+        objectMesh = GetComponent<MeshRenderer>();
+        saveMaterial = objectMesh.material;
     }
 
     public void Interact()
@@ -20,14 +22,14 @@ public class Interactable : MonoBehaviour
         onInteraction.Invoke();
     }
 
-    public void DisableOutline()
+    public void DisableMaterial()
     {
-        outline.enabled = false;
+        objectMesh.material = saveMaterial;
     }
 
-    public void EnableOutline()
+    public void EnableMaterial()
     {
-        outline.enabled = true;
+        objectMesh.material = highlightMaterial;
     }
 
 }

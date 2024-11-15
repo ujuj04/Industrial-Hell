@@ -29,7 +29,7 @@ public class PlayerInteraction : MonoBehaviour
 
                 if (currentInteractable && newInteractable != currentInteractable)
                 {
-                    currentInteractable.DisableOutline();
+                    currentInteractable.DisableMaterial();
                 }
                 if (newInteractable.enabled)
                 {
@@ -55,13 +55,13 @@ public class PlayerInteraction : MonoBehaviour
     void SetNewCurrentInteractable(Interactable newInteractable)
     {
         currentInteractable = newInteractable;
-        currentInteractable.EnableOutline();
+        currentInteractable.EnableMaterial();
     }
     void DisableCurrentInteractable()
     {
         if (currentInteractable)
         {
-            currentInteractable.DisableOutline();
+            currentInteractable.DisableMaterial();
             currentInteractable = null;
         }
     }
