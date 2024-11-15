@@ -24,7 +24,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (hit.collider.tag == "Interactable")
             {
-                Debug.Log("I detect interactable");
                 Interactable newInteractable = hit.collider.GetComponent<Interactable>();
 
                 if (currentInteractable && newInteractable != currentInteractable)
@@ -56,9 +55,11 @@ public class PlayerInteraction : MonoBehaviour
     {
         currentInteractable = newInteractable;
         currentInteractable.EnableMaterial();
+        HudController.instance.EnableInteractionText(currentInteractable.message);
     }
     void DisableCurrentInteractable()
     {
+        HudController.instance.DisableInteractionText();
         if (currentInteractable)
         {
             currentInteractable.DisableMaterial();
