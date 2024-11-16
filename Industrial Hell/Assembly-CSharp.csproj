@@ -62,17 +62,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\FactoryManager.cs" />
-    <Compile Include="Assets\HudController.cs" />
+    <Compile Include="Assets\Scripts\Boiler.cs" />
     <Compile Include="Assets\Scripts\Furnace.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\MoveCamera.cs" />
-    <Compile Include="Assets\FurnaceDoor.cs" />
+    <Compile Include="Assets\Scripts\RotatingWheel.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\PlayerItems.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerCam.cs" />
+    <Compile Include="Assets\Scripts\FurnaceDoor.cs" />
+    <Compile Include="Assets\Scripts\HudController.cs" />
     <Compile Include="Assets\Scripts\PlayerInteraction.cs" />
-    <Compile Include="Assets\Boiler.cs" />
+    <Compile Include="Assets\Scripts\WaterTank.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
