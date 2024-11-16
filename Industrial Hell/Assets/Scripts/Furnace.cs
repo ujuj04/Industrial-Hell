@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Furnace : MonoBehaviour
 {
-    float temperature = 0;
+    [System.NonSerialized] public float temperature = 0;
     private bool isCoalInside = false;
     public float gainTemperature = 0;
     public float lossTemperature = 0;
