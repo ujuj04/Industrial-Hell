@@ -33,23 +33,23 @@ public class HudController : MonoBehaviour
         {
             carryingText1.gameObject.SetActive(true);
             carryingText2.gameObject.SetActive(true);
+            
+            if (items.isCarryingCoal)
+            {
+                carryingTextItem.gameObject.SetActive(true);
+                carryingTextItem.text = "Coal";
+            }
+            else if (items.isCarryingGear)
+            {
+                carryingTextItem.gameObject.SetActive(true);
+                carryingTextItem.text = "Mechanical Gear";
+            }
         }
         else
         {
             carryingText1.gameObject.SetActive(false); 
             carryingText2.gameObject.SetActive(false);
-        }
-
-
-        if (items.isCarryingCoal)
-        {
-            carryingTextItem.gameObject.SetActive(true);
-            carryingTextItem.text = "Coal";
-        }
-        else
-        {
             carryingTextItem.gameObject.SetActive(false);
         }
     }
-
 }

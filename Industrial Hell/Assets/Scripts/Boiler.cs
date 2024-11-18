@@ -32,7 +32,7 @@ public class Boiler : MonoBehaviour
         }
 
         // Log the pressure value for debugging
-        Debug.Log("Current Pressure: " + pressure);
+        //Debug.Log("Current Pressure: " + pressure);
 
         currentPressureValue.text = ((uint)pressure).ToString();
     }
