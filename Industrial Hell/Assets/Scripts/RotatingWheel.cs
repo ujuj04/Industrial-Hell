@@ -5,23 +5,41 @@ using UnityEngine;
 public class RotatingWheel : MonoBehaviour
 {
     [System.NonSerialized] public float currentEfficiency;
-    [System.NonSerialized] public float efficiencyOverTime;
+    [System.NonSerialized] public float totalEfficiencyForDay;
 
-    public float efficiencyTransferRate;
+    [System.NonSerialized] public float efficiencyTransferRateCurrent;
+    public float efficiencyTransferRateWorkingGear;
+    public float efficiencyTransferRateBrokenGear;
 
     [SerializeField] Boiler boiler;
     [SerializeField] TextMeshProUGUI currentEfficiencyValue;
 
     [SerializeField] private Vector3 rotation;
-    [SerializeField] private Transform wheel;
+    [SerializeField] private Transform gear;
+
+    private float gearHP = 100;
+    private float gearHPLoseRate = 4;
 
     private void Update()
     {
         if (boiler.pressure > 0)
         {
-            currentEfficiency = boiler.pressure / efficiencyTransferRate;
-            
-            wheel.Rotate(rotation * boiler.pressure * Time.deltaTime);
+            if (gearHP > 0)
+            {
+                efficiencyTransferRateCurrent = efficiencyTransferRateWorkingGear;
+                Debug.Log("efficiencyTransferRate " + efficiencyTransferRateCurrent);
+            }
+            else
+            {
+                efficiencyTransferRateCurrent = efficiencyTransferRateBrokenGear;
+            }
+            currentEfficiency = boiler.pressure / efficiencyTransferRateCurrent;
+            totalEfficiencyForDay += currentEfficiency * Time.deltaTime;
+
+            gear.Rotate(rotation * currentEfficiency * Time.deltaTime);
+
+            gearHP -= gearHPLoseRate * Time.deltaTime;
+            Debug.Log("gearHP " + gearHP);
         }
         else
         {

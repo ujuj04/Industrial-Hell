@@ -6,8 +6,12 @@ public class FactoryManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float workRemainingTime;
 
+    [SerializeField] TextMeshProUGUI efficiencyValueText;
+    [SerializeField] RotatingWheel rotatingWheel;
+
     private void Update()
     {
+        //timer
         if (workRemainingTime > 0)
         {
             workRemainingTime -= Time.deltaTime;
@@ -21,6 +25,11 @@ public class FactoryManager : MonoBehaviour
         int minutes = Mathf.FloorToInt(workRemainingTime / 60);
         int seconds = Mathf.FloorToInt(workRemainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+
+        //energy today
+        efficiencyValueText.text = ((int)rotatingWheel.totalEfficiencyForDay).ToString();
+
     }
 
 

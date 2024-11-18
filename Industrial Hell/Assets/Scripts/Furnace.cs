@@ -53,4 +53,8 @@ public class Furnace : MonoBehaviour
         coalRemainingInside += giveCoalAmount;
     }
 
+    public void EmptyFurnace()
+    {
+        coalRemainingInside = 0f;
+    }
 }

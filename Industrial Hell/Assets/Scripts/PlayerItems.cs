@@ -2,15 +2,39 @@ using UnityEngine;
 
 public class PlayerItems : MonoBehaviour
 {
-    bool isCarryingCoal = false;
+    [System.NonSerialized] public bool isCarryingItem = false;
+    [System.NonSerialized] public bool isCarryingCoal = false;
     int coalAmount = 0;
     [SerializeField] Furnace furnaceRef;
+    
+    public KeyCode dropItemKey = KeyCode.L;
+
+    private void Update()
+    {
+        if (Input.GetKey(dropItemKey))
+        {
+            isCarryingItem = false;
+            isCarryingCoal = false; 
+            coalAmount = 0;
+        }
+    }
+
+
 
     public void PickupCoal()
     {
-        isCarryingCoal = true;
-        coalAmount++;
-        Debug.Log(coalAmount);
+        if (!isCarryingItem)
+        {
+            isCarryingCoal = true;
+            isCarryingItem = true;
+            coalAmount++;
+            Debug.Log(coalAmount);
+        }
+        else
+        {
+            Debug.Log("Can't hold more");
+            //add hint that you can't hold more items
+        }
     }
 
     public void PutCoalInFurnace()
@@ -24,12 +48,14 @@ public class PlayerItems : MonoBehaviour
             if (coalAmount == 0)
             {
                 isCarryingCoal = false;
+                isCarryingItem = false;
             }
         }
         else
         {
             Debug.Log("You don't have coal to put inside");
+            //add hint that you can't put coal until you hold it
         }
-        
+
     }
 }
