@@ -39,13 +39,23 @@ public class RotatingWheel : MonoBehaviour
     {
         if (isGearAttached) 
         {
+            if (gearHP > 0)
+            {
+                gearMaterialReference.material = normalGearMaterial;
+            }
+            else
+            {
+                gearMaterialReference.material = brokenGearMaterial;
+            }
+
             if (boiler.pressure > 0)
             {
+
+
                 if (gearHP > 0)
                 {
                     efficiencyTransferRateCurrent = efficiencyTransferRateWorkingGear;
                     Debug.Log("efficiencyTransferRate " + efficiencyTransferRateCurrent);
-                    gearMaterialReference.material = normalGearMaterial;
                 }
                 else
                 {
@@ -55,7 +65,6 @@ public class RotatingWheel : MonoBehaviour
                         HUD.CreatePopupUrgent("The gear is broken! Change it or suffer 5x efficiency penalties");
                         didShowBrokenGearInfo = true;
                     }
-                    gearMaterialReference.material = brokenGearMaterial;
                 }
                 currentEfficiency = boiler.pressure / efficiencyTransferRateCurrent;
                 totalEfficiencyForDay += currentEfficiency * Time.deltaTime;

@@ -436,6 +436,7 @@
 "Assets/Scripts/RotatingWheel.cs"
 "Assets/Scripts/WaterTank.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
+"Assets/TutorialText.cs"
 -langversion:9.0
 /deterministic
 /optimize+

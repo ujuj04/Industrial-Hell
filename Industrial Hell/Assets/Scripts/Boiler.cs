@@ -24,6 +24,7 @@ public class Boiler : MonoBehaviour
 
         // Ensure pressure does not drop below 0
         pressure = Math.Max(pressure - lossPressure * Time.deltaTime, 0);
+        Debug.Log("pressure " + pressure);
 
         // Check and limit the pressure value within UInt32 range
         if (pressure > UInt32.MaxValue)

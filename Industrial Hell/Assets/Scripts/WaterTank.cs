@@ -5,13 +5,28 @@ public class WaterTank : MonoBehaviour
 {
     [SerializeField] Boiler boiler;
     public float waterPumpTime;
-
     [SerializeField] HudController HUD;
+
+    private Coroutine pumpCoroutine; // Reference to the active coroutine
+    private float originalLossPressure; // Store the original loss pressure
+
+    void Start()
+    {
+        // Initialize the original loss pressure
+        originalLossPressure = boiler.lossPressure;
+    }
 
     // Method to start pumping water
     public void PumpWater()
     {
-        StartCoroutine(PumpWaterCoroutine());
+        if (pumpCoroutine != null)
+        {
+            StopCoroutine(pumpCoroutine);
+            boiler.lossPressure = originalLossPressure; // Reset to original loss pressure
+        }
+
+        // Start the coroutine
+        pumpCoroutine = StartCoroutine(PumpWaterCoroutine());
         HUD.CreatePopup("Water poured into Boiler. Pressure will be removed soon.");
     }
 
@@ -19,13 +34,14 @@ public class WaterTank : MonoBehaviour
     private IEnumerator PumpWaterCoroutine()
     {
         // Temporarily increase the pressure loss
-        float originalLossPressure = boiler.lossPressure;
         boiler.lossPressure = originalLossPressure * 10;
 
-        // Wait for 5 seconds
+        // Wait for the specified water pump time
         yield return new WaitForSeconds(waterPumpTime);
 
         // Reset the pressure loss to its original value
         boiler.lossPressure = originalLossPressure;
+
+        pumpCoroutine = null; // Reset the coroutine reference
     }
 }
