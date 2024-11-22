@@ -1,0 +1,64 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="Furnace">
+			<method name="EmptyFurnace"/>
+		</type>
+		<type fullname="FurnaceDoor">
+			<method name="OpenOrCloseFurnaceDoor"/>
+		</type>
+		<type fullname="PlayerItems">
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PutCoalInFurnace"/>
+		</type>
+		<type fullname="RotatingWheel">
+			<method name="AttachOrDetachGear"/>
+			<method name="AttachOrDetachGear"/>
+		</type>
+		<type fullname="WaterTank">
+			<method name="PumpWater"/>
+		</type>
+	</assembly>
+	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerButton">
+			<method name="OnAction"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField">
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerPanel">
+			<method name="OnScrollbarClicked"/>
+			<method name="OnScrollbarClicked"/>
+			<method name="ResetDebugManager"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerUIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+	</assembly>
+</linker>
