@@ -7,7 +7,9 @@ public class PlayerItems : MonoBehaviour
     [System.NonSerialized] public bool isCarryingGear = false;
     int coalAmount = 0;
     [SerializeField] Furnace furnaceRef;
-    
+    [SerializeField] HudController HUD;
+    [SerializeField] PlayerMovementAdvanced playerMovement;
+
     public KeyCode dropItemKey = KeyCode.L;
 
     private void Update()
@@ -18,6 +20,17 @@ public class PlayerItems : MonoBehaviour
             isCarryingGear = false;
             isCarryingCoal = false; 
             coalAmount = 0;
+            HUD.CreatePopup("Item dropped");
+        }
+        if (isCarryingItem)
+        {
+            playerMovement.walkSpeed = playerMovement.walkSpeedHalved;
+            playerMovement.sprintSpeed = playerMovement.sprintSpeedHalved;
+        }
+        else
+        {
+            playerMovement.walkSpeed = playerMovement.walkSpeedSaved;
+            playerMovement.sprintSpeed = playerMovement.sprintSpeedSaved;
         }
     }
 
@@ -31,11 +44,11 @@ public class PlayerItems : MonoBehaviour
             isCarryingItem = true;
             coalAmount++;
             Debug.Log(coalAmount);
+            HUD.CreatePopup("Picked up coal");
         }
         else
         {
-            Debug.Log("Can't hold more");
-            //add hint that you can't hold more items
+            HUD.CreatePopup("Can't hold more");
         }
     }
 
@@ -45,12 +58,11 @@ public class PlayerItems : MonoBehaviour
         {
             isCarryingGear = true;
             isCarryingItem = true;
-            Debug.Log("Took Gear");
+            HUD.CreatePopup("Picked up gear");
         }
         else
         {
-            Debug.Log("Can't hold more");
-            //add hint that you can't hold more items
+            HUD.CreatePopup("Can't hold more");
         }
     }
 
@@ -60,8 +72,8 @@ public class PlayerItems : MonoBehaviour
         {
             coalAmount--;
             furnaceRef.TurnCoalIntoTemperature();
-            Debug.Log(coalAmount); 
-            
+            HUD.CreatePopup("You put coal inside. Temperature starts increasing.");
+
             if (coalAmount == 0)
             {
                 isCarryingCoal = false;
@@ -70,8 +82,7 @@ public class PlayerItems : MonoBehaviour
         }
         else
         {
-            Debug.Log("You don't have coal to put inside");
-            //add hint that you can't put coal until you hold it
+            HUD.CreatePopup("You don't have coal to put inside. Pick it up first!");
         }
 
     }

@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class PlayerMovementAdvanced : MonoBehaviour
 {
     [Header("Movement")]
     private float moveSpeed;
-    public float walkSpeed;
-    public float sprintSpeed;
+    [NonSerialized] public float walkSpeed;
+    [NonSerialized] public float sprintSpeed;
+    public float walkSpeedHalved;
+    public float walkSpeedSaved;
+    public float sprintSpeedHalved;
+    public float sprintSpeedSaved;
 
     public float groundDrag;
 
@@ -65,6 +70,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
         readyToJump = true;
 
         startYScale = transform.localScale.y;
+
+        walkSpeed = walkSpeedSaved;
+        sprintSpeed = sprintSpeedSaved;
     }
 
     private void Update()

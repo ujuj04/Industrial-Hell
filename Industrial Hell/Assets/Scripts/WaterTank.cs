@@ -6,10 +6,13 @@ public class WaterTank : MonoBehaviour
     [SerializeField] Boiler boiler;
     public float waterPumpTime;
 
+    [SerializeField] HudController HUD;
+
     // Method to start pumping water
     public void PumpWater()
     {
         StartCoroutine(PumpWaterCoroutine());
+        HUD.CreatePopup("Water poured into Boiler. Pressure will be removed soon.");
     }
 
     // Coroutine to handle the water pumping duration

@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 
@@ -19,11 +20,16 @@ public class RotatingWheel : MonoBehaviour
     [SerializeField] private GameObject gearWorking;
     //[SerializeField] private Transform gearTransform;
     private bool isGearAttached = false;
+    private bool didShowBrokenGearInfo = false;
 
     [SerializeField] PlayerItems items;
 
     [SerializeField] Material normalGearMaterial;
+    [SerializeField] Renderer gearMaterialReference;
+    [SerializeField] Material brokenGearMaterial;
     [SerializeField] Material transparentGearMaterial;
+
+    [SerializeField] HudController HUD;
     
     private float gearHP = 100;
     public float gearHPLoseRate;
@@ -39,10 +45,17 @@ public class RotatingWheel : MonoBehaviour
                 {
                     efficiencyTransferRateCurrent = efficiencyTransferRateWorkingGear;
                     Debug.Log("efficiencyTransferRate " + efficiencyTransferRateCurrent);
+                    gearMaterialReference.material = normalGearMaterial;
                 }
                 else
                 {
                     efficiencyTransferRateCurrent = efficiencyTransferRateBrokenGear;
+                    if (!didShowBrokenGearInfo)
+                    {
+                        HUD.CreatePopupUrgent("The gear is broken! Change it or suffer 5x efficiency penalties");
+                        didShowBrokenGearInfo = true;
+                    }
+                    gearMaterialReference.material = brokenGearMaterial;
                 }
                 currentEfficiency = boiler.pressure / efficiencyTransferRateCurrent;
                 totalEfficiencyForDay += currentEfficiency * Time.deltaTime;
@@ -77,11 +90,12 @@ public class RotatingWheel : MonoBehaviour
                     gearHP = 100;
                     gearTransparent.SetActive(false);
                     gearWorking.SetActive(true);
-                    Debug.Log("gear attached");
+                    HUD.CreatePopup("Gear attached!");
+                    didShowBrokenGearInfo = false;
                 }
                 else
                 {
-                    Debug.Log("take gear before trying to place it");
+                    HUD.CreatePopup("You don't have a gear to attach. Pick it up first!");
                 }
             }
             //detaching
@@ -90,12 +104,12 @@ public class RotatingWheel : MonoBehaviour
                 isGearAttached = false;
                 gearTransparent.SetActive(true);
                 gearWorking.SetActive(false);
-                Debug.Log("gear dettached");
+                HUD.CreatePopup("Gear dettached!");
             }
         }
         else
         {
-            Debug.Log("Can't interact with gear while it's moving");
+            HUD.CreatePopup("Can't interact with gear if there is any pressure in the boiler!");
         }
     }
 }

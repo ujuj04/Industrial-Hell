@@ -13,6 +13,8 @@ public class Furnace : MonoBehaviour
     private float coalRemainingInside = 0f;
     public float giveCoalAmount = 10f;
 
+    [SerializeField] HudController HUD;
+
     private void Update()
     {
         if (coalRemainingInside > 0)
@@ -56,5 +58,6 @@ public class Furnace : MonoBehaviour
     public void EmptyFurnace()
     {
         coalRemainingInside = 0f;
+        HUD.CreatePopup("You emptied the furnace, there is now no coal inside!");
     }
 }
