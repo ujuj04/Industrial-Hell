@@ -15,7 +15,7 @@ C:/Users/Geo/Documents/GitHub/Industrial-Hell/Industrial Hell
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57643
+50969
 -job-worker-count
 7
 -background-job-worker-count
@@ -59,14 +59,14 @@ C:/Users/Geo/Documents/GitHub/Industrial-Hell/Industrial Hell
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24580]  Target information:
+Player connection [17800]  Target information:
 
-Player connection [24580]  * "[IP] 25.32.103.46 [Port] 0 [Flags] 2 [Guid] 3630070430 [EditorId] 3630070430 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IFDQIET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17800]  * "[IP] 25.32.103.46 [Port] 0 [Flags] 2 [Guid] 1608583180 [EditorId] 1608583180 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IFDQIET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24580]  * "[IP] 10.9.128.102 [Port] 0 [Flags] 2 [Guid] 3630070430 [EditorId] 3630070430 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IFDQIET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17800]  * "[IP] 11.11.27.138 [Port] 0 [Flags] 2 [Guid] 1608583180 [EditorId] 1608583180 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-IFDQIET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24580] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24580] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17800] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17800] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -77,7 +77,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.26f1 (ccb7c73d2c02)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Resources/UnitySubsystems
@@ -94,44 +94,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003487 seconds.
-- Loaded All Assemblies, in  0.424 seconds
+Registered in 0.004488 seconds.
+- Loaded All Assemblies, in  0.463 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.392 seconds
-Domain Reload Profiling: 813ms
-	BeginReloadAssembly (143ms)
+- Finished resetting the current domain, in  0.400 seconds
+Domain Reload Profiling: 859ms
+	BeginReloadAssembly (167ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
+	RebuildCommonClasses (47ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (174ms)
-		LoadAssemblies (139ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (169ms)
+		LoadAssemblies (162ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (171ms)
-			TypeCache.Refresh (170ms)
-				TypeCache.ScanAssembly (156ms)
+		AnalyzeDomain (165ms)
+			TypeCache.Refresh (163ms)
+				TypeCache.ScanAssembly (148ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (393ms)
+	FinalizeReload (401ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (343ms)
+		SetupLoadedEditorAssemblies (350ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (227ms)
-			ProcessInitializeOnLoadMethodAttributes (71ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (234ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -139,140 +139,116 @@ Domain Reload Profiling: 813ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.177 seconds
+- Loaded All Assemblies, in  1.389 seconds
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.141 seconds
-Domain Reload Profiling: 2311ms
-	BeginReloadAssembly (450ms)
+- Finished resetting the current domain, in  1.244 seconds
+Domain Reload Profiling: 2624ms
+	BeginReloadAssembly (503ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (39ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (629ms)
-		LoadAssemblies (413ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (769ms)
+		LoadAssemblies (526ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (332ms)
-			TypeCache.Refresh (232ms)
-				TypeCache.ScanAssembly (216ms)
-			BuildScriptInfoCaches (84ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (1141ms)
+		AnalyzeDomain (377ms)
+			TypeCache.Refresh (260ms)
+				TypeCache.ScanAssembly (239ms)
+			BuildScriptInfoCaches (100ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1244ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (860ms)
+		SetupLoadedEditorAssemblies (950ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (451ms)
-			ProcessInitializeOnLoadMethodAttributes (306ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (477ms)
+			ProcessInitializeOnLoadMethodAttributes (357ms)
+			AfterProcessingInitializeOnLoad (13ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 461 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6661 unused Assets / (5.7 MB). Loaded Objects now: 7730.
-Memory consumption went from 274.3 MB to 268.6 MB.
-Total: 9.763600 ms (FindLiveObjects: 0.851900 ms CreateObjectMapping: 0.750000 ms MarkObjects: 5.293500 ms  DeleteObjects: 2.866500 ms)
+Unloading 462 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6661 unused Assets / (5.8 MB). Loaded Objects now: 7732.
+Memory consumption went from 276.3 MB to 270.6 MB.
+Total: 13.364000 ms (FindLiveObjects: 0.728200 ms CreateObjectMapping: 0.776200 ms MarkObjects: 7.600200 ms  DeleteObjects: 4.258100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 160107.048609 seconds.
-  path: Assets/Models/Furnace
-  artifactKey: Guid(67004cb7243f5a84cafed084c36ce297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Furnace using Guid(67004cb7243f5a84cafed084c36ce297) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3085bf06855d7f4084a16964b5c4e92f') in 0.0119402 seconds
+  Time since last request: 469368.996385 seconds.
+  path: Assets/Models/Boiler/boiler.fbx
+  artifactKey: Guid(e9a1302d3c5328043bb34db754ee9fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Boiler/boiler.fbx using Guid(e9a1302d3c5328043bb34db754ee9fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b647f60fefc21613f553f8a2bfeaa3b2') in 2.9101653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 55
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.667499 seconds.
+  path: Assets/Models/Boiler/boilerTextures
+  artifactKey: Guid(d318ec233b0766141a1e2f363754a4ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Boiler/boilerTextures using Guid(d318ec233b0766141a1e2f363754a4ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30ed4747e9b434c9f4d99dd2eb67b8e9') in 0.0007984 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 55.267491 seconds.
-  path: Assets/Models/Furnace/stove_stove_shader_BaseMap.jpg
-  artifactKey: Guid(762a207d037782e4a87f57ff7eecda25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Furnace/stove_stove_shader_BaseMap.jpg using Guid(762a207d037782e4a87f57ff7eecda25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2afc84c15fdc25dbbd5022cc3a541078') in 0.0736425 seconds
+  Time since last request: 2.955013 seconds.
+  path: Assets/Models/Boiler/boilerTextures/boiler_boilerShader_MaskMap.png
+  artifactKey: Guid(38d042fcecc68704f9a7d944fdeab4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Boiler/boilerTextures/boiler_boilerShader_MaskMap.png using Guid(38d042fcecc68704f9a7d944fdeab4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6ffddfa71deec7045a081bbecd7108f') in 0.0231151 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Models/Furnace/stove_stove_shader_MaskMap.jpg
-  artifactKey: Guid(2c4a2707bbf32fc4a9ca33640f499fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Furnace/stove_stove_shader_MaskMap.jpg using Guid(2c4a2707bbf32fc4a9ca33640f499fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '271062ef7213a5df388a86a61a252afa') in 0.0153455 seconds
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Boiler/boilerTextures/boiler_waterTankShader_Normal.png
+  artifactKey: Guid(767f6a791a2a5a2478c2faab9f73a396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Boiler/boilerTextures/boiler_waterTankShader_Normal.png using Guid(767f6a791a2a5a2478c2faab9f73a396) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f289d935a5c868e900684e34e107913e') in 0.0101151 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Models/Furnace/stove_stove_shader_Normal.jpg
-  artifactKey: Guid(a7c6974938e274b4f8ec0d9dc5f035b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Furnace/stove_stove_shader_Normal.jpg using Guid(a7c6974938e274b4f8ec0d9dc5f035b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f593cdca259c53b1efc7e710d1a95f65') in 0.0154262 seconds
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Boiler/boilerTextures/boiler_boilerShader_Normal.png
+  artifactKey: Guid(df89508a84fc569408662da8063faa29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Boiler/boilerTextures/boiler_boilerShader_Normal.png using Guid(df89508a84fc569408662da8063faa29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'deaacb198293c5f4d528e3f1dbf495b4') in 0.011643 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 566.826885 seconds.
-  path: Assets/Models/Boiler/boiler_boilerShader_BaseMap.jpg
-  artifactKey: Guid(2be985f2e3baf3a48bb875b4589a6b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Boiler/boiler_boilerShader_BaseMap.jpg using Guid(2be985f2e3baf3a48bb875b4589a6b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87ab565ef320f38c573288e6b3852b02') in 0.0156143 seconds
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Boiler/boilerTextures/boiler_pipeShader_MaskMap.png
+  artifactKey: Guid(f18cb04a82908624c88a37213dc01572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Boiler/boilerTextures/boiler_pipeShader_MaskMap.png using Guid(f18cb04a82908624c88a37213dc01572) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3812af228fd84e8dc1533629fd5bcc10') in 0.0095452 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Models/Boiler/boiler_waterTankShader_Normal.jpg
-  artifactKey: Guid(244cf131095398b418130ce3566889f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Boiler/boiler_waterTankShader_Normal.jpg using Guid(244cf131095398b418130ce3566889f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ae60343e48042a1a3dd26e9166a0a4e') in 0.0186766 seconds
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/Boiler/boilerTextures/boiler_waterTankShader_BaseMap.png
+  artifactKey: Guid(b7ccb2ac6e3890345ab9e664ace8dc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Boiler/boilerTextures/boiler_waterTankShader_BaseMap.png using Guid(b7ccb2ac6e3890345ab9e664ace8dc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5ac1a6d34fbdae09df3f918b5bef23e') in 0.0353493 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Models/Boiler/boiler_waterTankShader_MaskMap.jpg
-  artifactKey: Guid(681a0e36d40db4643bcb1ec961a43d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Boiler/boiler_waterTankShader_MaskMap.jpg using Guid(681a0e36d40db4643bcb1ec961a43d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70f3619856a5586860003de6fadd0c6e') in 0.0140651 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Models/Boiler/boiler_pipeShader_Normal.jpg
-  artifactKey: Guid(4c8b51743ee922940b7296b55e4f87b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Boiler/boiler_pipeShader_Normal.jpg using Guid(4c8b51743ee922940b7296b55e4f87b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21fb65d526300dbcec85927cb8b36b2d') in 0.0196919 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Models/Boiler/boiler_pipeShader_BaseMap.jpg
-  artifactKey: Guid(ad45fb526ff5fc64ba8fd878c9e48c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Boiler/boiler_pipeShader_BaseMap.jpg using Guid(ad45fb526ff5fc64ba8fd878c9e48c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'defc4ff0b506a9a27a67add30d9a05da') in 0.0144664 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Models/Boiler/boiler_boilerShader_MaskMap.jpg
-  artifactKey: Guid(7d3dbd90be1952e4db6537c78b8aa40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Boiler/boiler_boilerShader_MaskMap.jpg using Guid(7d3dbd90be1952e4db6537c78b8aa40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01fd61a9617c5a5e7a026a2318fd4288') in 0.0127054 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Models/Boiler/boiler_vintShader_Normal.jpg
-  artifactKey: Guid(808b9bfc30d36d64798d21755a741fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Boiler/boiler_vintShader_Normal.jpg using Guid(808b9bfc30d36d64798d21755a741fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f40166388187c73bbee2d99e27c2cb16') in 0.0118692 seconds
+  Time since last request: 0.000041 seconds.
+  path: Assets/Models/Boiler/boilerTextures/boiler_vintShader_MaskMap.png
+  artifactKey: Guid(bfad9b10b3905fd4799d8db14da31490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Boiler/boilerTextures/boiler_vintShader_MaskMap.png using Guid(bfad9b10b3905fd4799d8db14da31490) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6442f5dffc729ce96fc2c5e228b644a') in 0.0098768 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

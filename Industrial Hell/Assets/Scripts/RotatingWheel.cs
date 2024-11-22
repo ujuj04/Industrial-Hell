@@ -24,8 +24,6 @@ public class RotatingWheel : MonoBehaviour
 
     [SerializeField] Material normalGearMaterial;
     [SerializeField] Material transparentGearMaterial;
-
-    [SerializeField] MeshRenderer meshRenderer;
     
     private float gearHP = 100;
     public float gearHPLoseRate;
