@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using System.Runtime.CompilerServices;
+using UnityEngine.SceneManagement;
 
 public class FactoryManager : MonoBehaviour
 {
@@ -19,7 +21,7 @@ public class FactoryManager : MonoBehaviour
         else
         {
             workRemainingTime = 0;
-            //call end work day event here later
+            EndDay();
         }
 
         int minutes = Mathf.FloorToInt(workRemainingTime / 60);
@@ -28,9 +30,19 @@ public class FactoryManager : MonoBehaviour
 
 
         //energy today
-        efficiencyValueText.text = ((int)rotatingWheel.totalEfficiencyForDay).ToString();
+        if (rotatingWheel!= null)
+        {
+            efficiencyValueText.text = ((int)rotatingWheel.totalEfficiencyForDay).ToString();
 
+        }
+        else
+        {
+            Debug.Log("wheel doesn't exist");
+        }
     }
 
-
+    public void EndDay()
+    {
+        SceneManager.LoadScene("EndDay");
+    }
 }
