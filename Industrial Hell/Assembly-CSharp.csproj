@@ -66,9 +66,9 @@
     <Compile Include="Assets\Scripts\Furnace.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\MoveCamera.cs" />
-    <Compile Include="Assets\TutorialText.cs" />
     <Compile Include="Assets\Scripts\RotatingWheel.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\TutorialText.cs" />
     <Compile Include="Assets\Scripts\PlayerItems.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerCam.cs" />

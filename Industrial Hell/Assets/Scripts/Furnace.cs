@@ -15,6 +15,8 @@ public class Furnace : MonoBehaviour
 
     [SerializeField] HudController HUD;
 
+    [SerializeField] private Animator leverAnimator;
+
     private void Update()
     {
         if (coalRemainingInside > 0)
@@ -57,6 +59,7 @@ public class Furnace : MonoBehaviour
 
     public void EmptyFurnace()
     {
+        leverAnimator.SetTrigger("LeverRotate");
         coalRemainingInside = 0f;
         HUD.CreatePopup("You emptied the furnace, there is now no coal inside!");
     }

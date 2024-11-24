@@ -7,6 +7,8 @@ public class WaterTank : MonoBehaviour
     public float waterPumpTime;
     [SerializeField] HudController HUD;
 
+    [SerializeField] private Animator valveAnimator;
+
     private Coroutine pumpCoroutine; // Reference to the active coroutine
     private float originalLossPressure; // Store the original loss pressure
 
@@ -19,6 +21,9 @@ public class WaterTank : MonoBehaviour
     // Method to start pumping water
     public void PumpWater()
     {
+        // Set the trigger to start the animation
+        valveAnimator.SetTrigger("ValveRotate");
+
         if (pumpCoroutine != null)
         {
             StopCoroutine(pumpCoroutine);
