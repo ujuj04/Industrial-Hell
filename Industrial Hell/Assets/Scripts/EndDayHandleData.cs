@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EndDayHandleData : MonoBehaviour
 {
@@ -10,15 +11,36 @@ public class EndDayHandleData : MonoBehaviour
 
     [SerializeField] ExchangeRate exchangeRate;
 
+    [SerializeField] TextMeshProUGUI wellBeingValue;
+    [SerializeField] Image wellBeingMeter;
+
+    [SerializeField] Button foodDisabledButton;
+    [SerializeField] Button foodEnabledButton;
+    public int foodPriceValue = 25;
+    public int foodWellBeingValue = 20;
+    private bool isFoodActive = false;
+
+
     private void Awake()
     {
-        Cursor.lockState = CursorLockMode.None; 
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
         variableManager = FindObjectOfType<VariableManager>();
 
-        if (variableManager != null )
+        UpdateUI();
+        
+    }
+
+
+    private void UpdateUI()
+    {
+        if (variableManager != null)
         {
+            wellBeingValue.text = variableManager.WellBeingValue.ToString();
+            wellBeingMeter.fillAmount = variableManager.WellBeingValue / 100f;
+            Debug.Log(variableManager.WellBeingValue / 100f);
+
             energyGeneratedText.text = variableManager.EnergyCount.ToString();
 
             CalculateMoney();
@@ -32,5 +54,32 @@ public class EndDayHandleData : MonoBehaviour
         int tempMoney = variableManager.EnergyCount / exchangeRate.exchnageRateValue;
 
         variableManager.MoneyCount += tempMoney;
+    }
+
+    public void BuyFood()
+    {
+        if (!isFoodActive)
+        {
+            if (variableManager.MoneyCount - foodPriceValue > 0)
+            {
+                variableManager.WellBeingValue += foodWellBeingValue;
+                variableManager.MoneyCount -= foodPriceValue;
+                foodEnabledButton.gameObject.SetActive(true);
+                isFoodActive = true;
+            }
+            else
+            {
+                Debug.Log("not enough money");
+            }
+        }
+        else
+        {
+            variableManager.WellBeingValue -= foodWellBeingValue;
+            variableManager.MoneyCount += foodPriceValue;
+            foodEnabledButton.gameObject.SetActive(false);
+            isFoodActive = false;
+        }
+
+        UpdateUI();
     }
 }

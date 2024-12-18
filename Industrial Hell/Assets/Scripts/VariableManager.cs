@@ -6,11 +6,11 @@ public class VariableManager : MonoBehaviour
 {
     RotatingWheel rotatingWheel;
 
-    [NonSerialized] public int EnergyCount = 0;
+    public int EnergyCount = 0;
 
-    [NonSerialized] public int MoneyCount = 0;
+    public int MoneyCount = 0;
 
-    [NonSerialized] public int WellBeingValue = 100;
+    public int WellBeingValue = 100;
 
     private void Awake()
     {
@@ -27,6 +27,15 @@ public class VariableManager : MonoBehaviour
             {
                 EnergyCount = (int)rotatingWheel.totalEfficiencyForDay;
             }
+        }
+
+        if (WellBeingValue > 100)
+        {
+            WellBeingValue = 100;
+        }
+        else if (WellBeingValue < 0)
+        {
+            WellBeingValue = 0;
         }
     }
 }
