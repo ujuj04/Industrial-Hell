@@ -6,14 +6,41 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
+    path: Assets/Scenes/Sequence0/Letter0.unity
+    guid: 8e94613c657aea444b048bcf9916a9bb
+  - enabled: 1
+    path: Assets/Scenes/Sequence0/Level0.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Sequence1/Letter1.unity
+    guid: ca81d00ce7d7fad4bb2c8fca8a8f2cee
+  - enabled: 1
+    path: Assets/Scenes/Sequence1/Level1.unity
     guid: 3241d85cfa923fe4e8fb6c98787adfad
   - enabled: 1
-    path: Assets/Scenes/EndDay.unity
+    path: Assets/Scenes/Sequence1/EndDay1.unity
     guid: 364442bb319cf8e48b69447b2dc640be
+  - enabled: 1
+    path: Assets/Scenes/Sequence2/Letter2.unity
+    guid: 0b5a63d5a78e2b04891519bc0700a11d
+  - enabled: 1
+    path: Assets/Scenes/Sequence2/Level2.unity
+    guid: a9005306e68fd7e42810ffe55946468a
+  - enabled: 1
+    path: Assets/Scenes/Sequence2/EndDay2.unity
+    guid: 42da9b25950c90d4981ea040ad1831c3
+  - enabled: 1
+    path: Assets/Scenes/Sequence3/Letter3.unity
+    guid: 4c2a82166826be04e9e00992ca98ffeb
+  - enabled: 1
+    path: Assets/Scenes/Sequence3/Level3.unity
+    guid: 2304b3f64daf7db43aa55b9a664dae9c
+  - enabled: 1
+    path: Assets/Scenes/Sequence3/EndDay3.unity
+    guid: 90350c9b79e91464ba4de11df0d115dc
+  - enabled: 1
+    path: Assets/Scenes/Sequence4/Letter4.unity
+    guid: 4c16a5d248647b04fa94ff8628117af6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
   m_UseUCBPForAssetBundles: 0

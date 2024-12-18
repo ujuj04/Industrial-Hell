@@ -1,9 +1,17 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="CloseGame">
+			<method name="Close"/>
+		</type>
+		<type fullname="EndTutorial">
+			<method name="FinishTutorial"/>
+		</type>
 		<type fullname="Furnace">
+			<method name="EmptyFurnace"/>
 			<method name="EmptyFurnace"/>
 		</type>
 		<type fullname="FurnaceDoor">
+			<method name="OpenOrCloseFurnaceDoor"/>
 			<method name="OpenOrCloseFurnaceDoor"/>
 		</type>
 		<type fullname="PlayerItems">
@@ -18,6 +26,30 @@
 			<method name="PickupCoal"/>
 			<method name="PickupCoal"/>
 			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
 			<method name="PickUpGear"/>
 			<method name="PickUpGear"/>
 			<method name="PickUpGear"/>
@@ -26,12 +58,16 @@
 			<method name="PickUpGear"/>
 			<method name="PickUpGear"/>
 			<method name="PutCoalInFurnace"/>
+			<method name="PutCoalInFurnace"/>
 		</type>
 		<type fullname="RotatingWheel">
 			<method name="AttachOrDetachGear"/>
 			<method name="AttachOrDetachGear"/>
+			<method name="AttachOrDetachGear"/>
+			<method name="AttachOrDetachGear"/>
 		</type>
 		<type fullname="WaterTank">
+			<method name="PumpWater"/>
 			<method name="PumpWater"/>
 		</type>
 	</assembly>

@@ -43,6 +43,19 @@ public class FactoryManager : MonoBehaviour
 
     public void EndDay()
     {
-        SceneManager.LoadScene("EndDay");
+        //no if for Level0, because plaeyrs presses button to progress to next level
+
+        if (SceneManager.GetActiveScene().name == "Level1")
+        {
+            SceneManager.LoadScene("EndDay1");
+        }
+        else if (SceneManager.GetActiveScene().name == "Level2")
+        {
+            SceneManager.LoadScene("EndDay2");
+        }
+        else if (SceneManager.GetActiveScene().name == "Level3")
+        {
+            SceneManager.LoadScene("EndDay3");
+        }
     }
 }

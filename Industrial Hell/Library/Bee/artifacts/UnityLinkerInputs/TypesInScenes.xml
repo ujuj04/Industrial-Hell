@@ -1,6 +1,9 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="Boiler" preserve="nothing"/>
+		<type fullname="CloseGame" preserve="nothing"/>
+		<type fullname="EndDayHandleData" preserve="nothing"/>
+		<type fullname="EndTutorial" preserve="nothing"/>
 		<type fullname="FactoryManager" preserve="nothing"/>
 		<type fullname="FactoryThemeText" preserve="nothing"/>
 		<type fullname="Furnace" preserve="nothing"/>
@@ -14,6 +17,7 @@
 		<type fullname="PlayerMovementAdvanced" preserve="nothing"/>
 		<type fullname="Readme" preserve="nothing"/>
 		<type fullname="RotatingWheel" preserve="nothing"/>
+		<type fullname="VariableManager" preserve="nothing"/>
 		<type fullname="WaterTank" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
