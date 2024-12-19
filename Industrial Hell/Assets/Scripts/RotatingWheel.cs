@@ -78,6 +78,7 @@ public class RotatingWheel : MonoBehaviour
             else
             {
                 boiler.pressure = 0;
+                currentEfficiency = 0;
             }
 
             currentEfficiencyValue.text = Convert.ToUInt32(currentEfficiency).ToString();

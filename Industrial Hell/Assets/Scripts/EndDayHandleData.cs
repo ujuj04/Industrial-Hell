@@ -56,6 +56,9 @@ public class EndDayHandleData : MonoBehaviour
 
         exchangeRateText.text = exchangeRate.exchnageRateValue.ToString() + " energy = 1$";
 
+        //reduce well being every day by 25
+        variableManager.WellBeingValue -= 40;
+
         CalculateMoney();
 
         UpdateUI();

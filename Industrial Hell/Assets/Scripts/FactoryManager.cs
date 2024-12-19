@@ -2,6 +2,8 @@ using UnityEngine;
 using TMPro;
 using System.Runtime.CompilerServices;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using System.Collections;
 
 public class FactoryManager : MonoBehaviour
 {
@@ -10,6 +12,19 @@ public class FactoryManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI efficiencyValueText;
     [SerializeField] RotatingWheel rotatingWheel;
+
+    [SerializeField] Boiler boiler;
+
+    [SerializeField] HudController HUD;
+
+    public Color originalColorOfLights;
+
+    private bool isAlarmOn = false;
+    private bool wasAlarmPlayed = false;
+
+    public int timeToPlayAlarmOnLevel3 = 90;
+
+    public float alarmTimerDuration = 30f;  
 
     private void Update()
     {
@@ -39,6 +54,25 @@ public class FactoryManager : MonoBehaviour
         {
             Debug.Log("wheel doesn't exist");
         }
+
+        if (SceneManager.GetActiveScene().name == "Level3")
+        {
+            if (workRemainingTime <= timeToPlayAlarmOnLevel3 && !wasAlarmPlayed && !isAlarmOn)
+            {
+                AlarmEvent();
+            }
+
+            if (isAlarmOn)
+            {
+                if(boiler.pressure <= 0)
+                {
+                    EndAlarm();
+                }
+            }
+        }
+
+        
+
     }
 
     public void EndDay()
@@ -58,4 +92,65 @@ public class FactoryManager : MonoBehaviour
             SceneManager.LoadScene("EndDay3");
         }
     }
+
+
+    private void AlarmEvent()
+    {
+        StartCoroutine(StartAlarmTimer());
+
+        HUD.CreatePopupUrgent("ALARM, GAS LEAK!!! REDUCE THE PRESSURE TO 0 IMMEDIATELY!");
+
+        GameObject[] lights = GameObject.FindGameObjectsWithTag("LightsAlarm");
+
+        foreach (GameObject lightObject in lights)
+        {
+
+            Debug.Log("found lights");
+            Light lightComponent = lightObject.GetComponent<Light>();
+
+            if (lightComponent != null && lightComponent.type == LightType.Point) 
+            { 
+                lightComponent.color = Color.red;
+            }
+        }
+
+        isAlarmOn = true;
+    }
+
+    private void EndAlarm()
+    {
+        GameObject[] lights = GameObject.FindGameObjectsWithTag("LightsAlarm");
+
+        foreach (GameObject lightObject in lights)
+        {
+
+            Debug.Log("found lights");
+            Light lightComponent = lightObject.GetComponent<Light>();
+
+            if (lightComponent != null && lightComponent.type == LightType.Point)
+            {
+                lightComponent.color = originalColorOfLights;
+            }
+        }
+        isAlarmOn = false;
+
+        wasAlarmPlayed = true;
+    }
+
+    IEnumerator StartAlarmTimer()
+    {
+        yield return new WaitForSeconds(alarmTimerDuration);
+
+        OnAlarmtimerComplete();
+    }
+
+    private void OnAlarmtimerComplete()
+    {
+        if (isAlarmOn)
+        {
+            //load bad ending
+            Debug.Log("bad ending");
+        }
+    }
+
 }

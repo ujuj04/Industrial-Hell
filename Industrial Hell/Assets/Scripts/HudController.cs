@@ -97,7 +97,7 @@ public class HudController : MonoBehaviour
         popupTextUrgent.text = message;
 
         // Wait for 10 seconds
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(10);
 
         popupTextUrgent.gameObject.SetActive(false);
         coroutinePopupUrgent = null;

@@ -39,7 +39,7 @@ public class WaterTank : MonoBehaviour
     private IEnumerator PumpWaterCoroutine()
     {
         // Temporarily increase the pressure loss
-        boiler.lossPressure = originalLossPressure * 10;
+        boiler.lossPressure = originalLossPressure * 100;
 
         // Wait for the specified water pump time
         yield return new WaitForSeconds(waterPumpTime);

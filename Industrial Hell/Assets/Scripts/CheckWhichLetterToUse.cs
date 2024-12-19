@@ -25,7 +25,7 @@ public class CheckWhichLetterToUse : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Letter2")
         {
-            if (variableManager.WellBeingValue > wellBeingValueRequiredCheck) 
+            if (variableManager.WellBeingValue >= wellBeingValueRequiredCheck) 
             {
                 letterImage.sprite = day2Good;
                 Debug.Log("good day 2");
@@ -38,7 +38,7 @@ public class CheckWhichLetterToUse : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Letter3")
         {
-            if (variableManager.WellBeingValue > wellBeingValueRequiredCheck)
+            if (variableManager.WellBeingValue >= wellBeingValueRequiredCheck)
             {
                 letterImage.sprite = day3Good;
                 Debug.Log("good day 3");
@@ -51,7 +51,7 @@ public class CheckWhichLetterToUse : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Letter4")
         {
-            if (variableManager.WellBeingValue > wellBeingValueRequiredCheck)
+            if (variableManager.WellBeingValue >= wellBeingValueRequiredCheck)
             {
                 letterImage.sprite = day4Good;
                 Debug.Log("good day 4");

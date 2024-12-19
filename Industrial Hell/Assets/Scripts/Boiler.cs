@@ -7,6 +7,7 @@ public class Boiler : MonoBehaviour
     [System.NonSerialized] public float pressure;
     public float gainPressure;
     public float lossPressure;
+    public float maxPressure;
     public float minOptimalTemperature;
     public float maxOptimalTemperature;
     [SerializeField] Furnace furnace;
@@ -17,14 +18,14 @@ public class Boiler : MonoBehaviour
     private void Update()
     {
         if (furnace.temperature >= minOptimalTemperature &&
-            furnace.temperature <= maxOptimalTemperature)
+            furnace.temperature <= maxOptimalTemperature && pressure < maxPressure)
         {
             pressure += gainPressure * Time.deltaTime;
         }
 
         // Ensure pressure does not drop below 0
         pressure = Math.Max(pressure - lossPressure * Time.deltaTime, 0);
-        Debug.Log("pressure " + pressure);
+        //Debug.Log("pressure " + pressure);
 
         // Check and limit the pressure value within UInt32 range
         if (pressure > UInt32.MaxValue)
