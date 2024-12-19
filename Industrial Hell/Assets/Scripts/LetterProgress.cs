@@ -26,5 +26,9 @@ public class LetterProgress : MonoBehaviour
         {
             SceneManager.LoadScene("Level3");
         }
+        else if (SceneManager.GetActiveScene().name == "Letter4")
+        {
+            SceneManager.LoadScene("Ending");
+        }
     }
 }
