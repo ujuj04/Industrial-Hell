@@ -58,6 +58,10 @@ public class EndDayHandleData : MonoBehaviour
 
         //reduce well being every day by 25
         variableManager.WellBeingValue -= 40;
+        if (variableManager.WellBeingValue < 0)
+        {
+            variableManager.WellBeingValue = 0;
+        }
 
         CalculateMoney();
 

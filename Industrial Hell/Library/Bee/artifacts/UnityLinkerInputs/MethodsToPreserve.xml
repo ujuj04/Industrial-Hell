@@ -1,7 +1,28 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
 		<type fullname="CloseGame">
-			<method name="Close"/>
+			<method name="CloseGameEvent"/>
+			<method name="CloseGameEvent"/>
+		</type>
+		<type fullname="EndDayHandleData">
+			<method name="BuyAmenities"/>
+			<method name="BuyAmenities"/>
+			<method name="BuyAmenities"/>
+			<method name="BuyAmenities"/>
+			<method name="BuyAmenities"/>
+			<method name="BuyAmenities"/>
+			<method name="BuyClothing"/>
+			<method name="BuyClothing"/>
+			<method name="BuyFood"/>
+			<method name="BuyFood"/>
+			<method name="BuyFood"/>
+			<method name="BuyFood"/>
+			<method name="BuyFood"/>
+			<method name="BuyFood"/>
+			<method name="BuyMedicine"/>
+			<method name="BuyMedicine"/>
+			<method name="BuyMedicine"/>
+			<method name="BuyMedicine"/>
 		</type>
 		<type fullname="EndTutorial">
 			<method name="FinishTutorial"/>
@@ -9,10 +30,21 @@
 		<type fullname="Furnace">
 			<method name="EmptyFurnace"/>
 			<method name="EmptyFurnace"/>
+			<method name="EmptyFurnace"/>
+			<method name="EmptyFurnace"/>
 		</type>
 		<type fullname="FurnaceDoor">
 			<method name="OpenOrCloseFurnaceDoor"/>
 			<method name="OpenOrCloseFurnaceDoor"/>
+			<method name="OpenOrCloseFurnaceDoor"/>
+			<method name="OpenOrCloseFurnaceDoor"/>
+		</type>
+		<type fullname="LetterProgress">
+			<method name="ProgressToNextSceneLetters"/>
+			<method name="ProgressToNextSceneLetters"/>
+			<method name="ProgressToNextSceneLetters"/>
+			<method name="ProgressToNextSceneLetters"/>
+			<method name="ProgressToNextSceneLetters"/>
 		</type>
 		<type fullname="PlayerItems">
 			<method name="PickupCoal"/>
@@ -45,6 +77,48 @@
 			<method name="PickupCoal"/>
 			<method name="PickupCoal"/>
 			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickupCoal"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
+			<method name="PickUpGear"/>
 			<method name="PickUpGear"/>
 			<method name="PickUpGear"/>
 			<method name="PickUpGear"/>
@@ -59,14 +133,27 @@
 			<method name="PickUpGear"/>
 			<method name="PutCoalInFurnace"/>
 			<method name="PutCoalInFurnace"/>
+			<method name="PutCoalInFurnace"/>
+			<method name="PutCoalInFurnace"/>
+		</type>
+		<type fullname="ProgressToNextSceneDayEndScript">
+			<method name="ProgressToNextSceneDayEnd"/>
+			<method name="ProgressToNextSceneDayEnd"/>
+			<method name="ProgressToNextSceneDayEnd"/>
 		</type>
 		<type fullname="RotatingWheel">
 			<method name="AttachOrDetachGear"/>
 			<method name="AttachOrDetachGear"/>
 			<method name="AttachOrDetachGear"/>
 			<method name="AttachOrDetachGear"/>
+			<method name="AttachOrDetachGear"/>
+			<method name="AttachOrDetachGear"/>
+			<method name="AttachOrDetachGear"/>
+			<method name="AttachOrDetachGear"/>
 		</type>
 		<type fullname="WaterTank">
+			<method name="PumpWater"/>
+			<method name="PumpWater"/>
 			<method name="PumpWater"/>
 			<method name="PumpWater"/>
 		</type>

@@ -148,8 +148,7 @@ public class FactoryManager : MonoBehaviour
     {
         if (isAlarmOn)
         {
-            //load bad ending
-            Debug.Log("bad ending");
+            SceneManager.LoadScene("DeadFromExplosion");
         }
     }
 

@@ -41,6 +41,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sequence4/Letter4.unity
     guid: 4c16a5d248647b04fa94ff8628117af6
+  - enabled: 1
+    path: Assets/Scenes/Sequence5/DeadFromExplosion.unity
+    guid: fe68e3b331dd56741a7a092c419618fc
+  - enabled: 1
+    path: Assets/Scenes/Sequence5/Ending.unity
+    guid: 7c278add7118575469a0f637fb90e7b4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 35845fe01580c41289b024647b1d1c53, type: 3}
   m_UseUCBPForAssetBundles: 0

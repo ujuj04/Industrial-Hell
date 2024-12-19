@@ -18,6 +18,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "CheckWhichLetterToUse",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "CloseGame",
             "moduleName": "",
             "usedInScenes": []
@@ -35,9 +42,20 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -50,7 +68,21 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "EndingStory",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "EndTutorial",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExchangeRate",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -88,9 +120,20 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -115,14 +158,32 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "LetterProgress",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "LevelGameManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -145,9 +206,20 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -163,9 +235,20 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -206,7 +289,7 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "Readme",
+            "fullManagedTypeName": "ProgressToNextSceneDayEndScript",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -286,8 +369,10 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -317,9 +402,20 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -363,8 +459,10 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -373,8 +471,10 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -383,9 +483,20 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -394,9 +505,20 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -405,9 +527,20 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -416,8 +549,10 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -426,9 +561,20 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -437,9 +583,20 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -448,9 +605,20 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -459,8 +627,10 @@
             "fullManagedTypeName": "UnityEngine.CapsuleCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -469,8 +639,10 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -479,9 +651,20 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -497,7 +680,16 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -527,9 +719,11 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -538,9 +732,20 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -549,8 +754,10 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -559,8 +766,10 @@
             "fullManagedTypeName": "UnityEngine.LightingSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -569,9 +778,20 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -580,8 +800,10 @@
             "fullManagedTypeName": "UnityEngine.LightProbes",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -590,9 +812,20 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -601,8 +834,10 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -611,8 +846,10 @@
             "fullManagedTypeName": "UnityEngine.MeshCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -621,8 +858,10 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -631,8 +870,10 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -641,9 +882,20 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -652,8 +904,10 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -662,9 +916,20 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -673,8 +938,10 @@
             "fullManagedTypeName": "UnityEngine.PhysicsMaterial",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -690,9 +957,20 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -701,8 +979,10 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -1299,9 +1579,20 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -1310,8 +1601,10 @@
             "fullManagedTypeName": "UnityEngine.Rigidbody",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -1320,8 +1613,10 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/Level3.unity"
             ]
         },
         {
@@ -1330,9 +1625,20 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -1341,8 +1647,16 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -1351,9 +1665,20 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -1362,9 +1687,20 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -1373,9 +1709,20 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {
@@ -1391,9 +1738,20 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/EndDay.unity",
-                "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/TutorialScene.unity"
+                "Assets/Scenes/Sequence0/Letter0.unity",
+                "Assets/Scenes/Sequence0/Level0.unity",
+                "Assets/Scenes/Sequence1/EndDay1.unity",
+                "Assets/Scenes/Sequence1/Letter1.unity",
+                "Assets/Scenes/Sequence1/Level1.unity",
+                "Assets/Scenes/Sequence2/EndDay2.unity",
+                "Assets/Scenes/Sequence2/Letter2.unity",
+                "Assets/Scenes/Sequence2/Level2.unity",
+                "Assets/Scenes/Sequence3/EndDay3.unity",
+                "Assets/Scenes/Sequence3/Letter3.unity",
+                "Assets/Scenes/Sequence3/Level3.unity",
+                "Assets/Scenes/Sequence4/Letter4.unity",
+                "Assets/Scenes/Sequence5/DeadFromExplosion.unity",
+                "Assets/Scenes/Sequence5/Ending.unity"
             ]
         },
         {

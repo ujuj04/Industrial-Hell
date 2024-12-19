@@ -1,21 +1,25 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="Boiler" preserve="nothing"/>
+		<type fullname="CheckWhichLetterToUse" preserve="nothing"/>
 		<type fullname="CloseGame" preserve="nothing"/>
 		<type fullname="EndDayHandleData" preserve="nothing"/>
+		<type fullname="EndingStory" preserve="nothing"/>
 		<type fullname="EndTutorial" preserve="nothing"/>
+		<type fullname="ExchangeRate" preserve="nothing"/>
 		<type fullname="FactoryManager" preserve="nothing"/>
 		<type fullname="FactoryThemeText" preserve="nothing"/>
 		<type fullname="Furnace" preserve="nothing"/>
 		<type fullname="FurnaceDoor" preserve="nothing"/>
 		<type fullname="HudController" preserve="nothing"/>
 		<type fullname="Interactable" preserve="nothing"/>
+		<type fullname="LetterProgress" preserve="nothing"/>
 		<type fullname="MoveCamera" preserve="nothing"/>
 		<type fullname="PlayerCam" preserve="nothing"/>
 		<type fullname="PlayerInteraction" preserve="nothing"/>
 		<type fullname="PlayerItems" preserve="nothing"/>
 		<type fullname="PlayerMovementAdvanced" preserve="nothing"/>
-		<type fullname="Readme" preserve="nothing"/>
+		<type fullname="ProgressToNextSceneDayEndScript" preserve="nothing"/>
 		<type fullname="RotatingWheel" preserve="nothing"/>
 		<type fullname="VariableManager" preserve="nothing"/>
 		<type fullname="WaterTank" preserve="nothing"/>

@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\ExchangeRate.cs" />
     <Compile Include="Assets\Scripts\CloseGame.cs" />
     <Compile Include="Assets\Scripts\Furnace.cs" />
+    <Compile Include="Assets\EndingStory.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\MoveCamera.cs" />
     <Compile Include="Assets\Scripts\ProgressToNextSceneDayEnd.cs" />
