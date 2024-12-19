@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\FactoryManager.cs" />
     <Compile Include="Assets\Scripts\Boiler.cs" />
     <Compile Include="Assets\CloseGame.cs" />
+    <Compile Include="Assets\CheckWhichLetterToUse.cs" />
     <Compile Include="Assets\Scripts\Furnace.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\MoveCamera.cs" />

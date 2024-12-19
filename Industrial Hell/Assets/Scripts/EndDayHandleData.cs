@@ -8,7 +8,9 @@ public class EndDayHandleData : MonoBehaviour
     VariableManager variableManager;
 
     [SerializeField] TextMeshProUGUI energyGeneratedText;
+    [SerializeField] TextMeshProUGUI exchangeRateText;
     [SerializeField] TextMeshProUGUI moneyEarnedText;
+    [SerializeField] TextMeshProUGUI moneyTotalText;
 
     [SerializeField] ExchangeRate exchangeRate;
 
@@ -27,6 +29,18 @@ public class EndDayHandleData : MonoBehaviour
     public int medicineWellBeingValue = 25;
     private bool isMedicineActive = false;
 
+    [SerializeField] Button amenitiesDisabledButton;
+    [SerializeField] Button amenitiesEnabledButton;
+    public int amenitiesPriceValue = 40;
+    public int amenitiesWellBeingValue = 25;
+    private bool isAmenitiesActive = false;
+
+    [SerializeField] Button clothingDisabledButton;
+    [SerializeField] Button clothingEnabledButton;
+    public int clothingPriceValue = 40;
+    public int clothingWellBeingValue = 25;
+    private bool isClothingActive = false;
+
     private int wellBeingValueTemp = 0;
 
     [SerializeField] GameObject popup;
@@ -40,8 +54,11 @@ public class EndDayHandleData : MonoBehaviour
 
         variableManager = FindObjectOfType<VariableManager>();
 
+        exchangeRateText.text = exchangeRate.exchnageRateValue.ToString() + " energy = 1$";
+
+        CalculateMoney();
+
         UpdateUI();
-        
     }
 
 
@@ -49,14 +66,14 @@ public class EndDayHandleData : MonoBehaviour
     {
         if (variableManager != null)
         {
-            wellBeingValue.text = variableManager.WellBeingValue.ToString();
+            wellBeingValue.text = variableManager.WellBeingValue.ToString() + "%";
             wellBeingMeter.fillAmount = variableManager.WellBeingValue / 100f;
 
             energyGeneratedText.text = variableManager.EnergyCount.ToString();
 
-            CalculateMoney();
+            moneyEarnedText.text = (variableManager.EnergyCount / exchangeRate.exchnageRateValue).ToString();
 
-            moneyEarnedText.text = variableManager.MoneyCount.ToString();
+            moneyTotalText.text = variableManager.MoneyCount.ToString();
         }
     }
 
@@ -151,6 +168,89 @@ public class EndDayHandleData : MonoBehaviour
         UpdateUI();
     }
 
+    public void BuyAmenities()
+    {
+        if (!isAmenitiesActive)
+        {
+            if (variableManager.MoneyCount - amenitiesPriceValue > 0)
+            {
+                if (variableManager.WellBeingValue + amenitiesWellBeingValue < 100)
+                {
+                    variableManager.WellBeingValue += amenitiesWellBeingValue;
+                }
+                else
+                {
+                    wellBeingValueTemp = (variableManager.WellBeingValue + amenitiesWellBeingValue) - 100;
+                    variableManager.WellBeingValue = 100;
+                }
+
+                variableManager.MoneyCount -= amenitiesPriceValue;
+                amenitiesEnabledButton.gameObject.SetActive(true);
+                isAmenitiesActive = true;
+            }
+            else
+            {
+                CreatePopup("Not Enough $");
+            }
+        }
+        else
+        {
+            variableManager.WellBeingValue -= amenitiesWellBeingValue;
+            if (wellBeingValueTemp > 0)
+            {
+                variableManager.WellBeingValue += wellBeingValueTemp;
+                wellBeingValueTemp = 0;
+            }
+
+            variableManager.MoneyCount += amenitiesPriceValue;
+            amenitiesEnabledButton.gameObject.SetActive(false);
+            isAmenitiesActive = false;
+        }
+
+        UpdateUI();
+    }
+
+    public void BuyClothing()
+    {
+        if (!isClothingActive)
+        {
+            if (variableManager.MoneyCount - clothingPriceValue > 0)
+            {
+                if (variableManager.WellBeingValue + clothingWellBeingValue < 100)
+                {
+                    variableManager.WellBeingValue += clothingWellBeingValue;
+                }
+                else
+                {
+                    wellBeingValueTemp = (variableManager.WellBeingValue + clothingWellBeingValue) - 100;
+                    variableManager.WellBeingValue = 100;
+                }
+
+                variableManager.MoneyCount -= clothingPriceValue;
+                clothingEnabledButton.gameObject.SetActive(true);
+                isClothingActive = true;
+            }
+            else
+            {
+                CreatePopup("Not Enough $");
+            }
+        }
+        else
+        {
+            variableManager.WellBeingValue -= clothingWellBeingValue;
+            if (wellBeingValueTemp > 0)
+            {
+                variableManager.WellBeingValue += wellBeingValueTemp;
+                wellBeingValueTemp = 0;
+            }
+
+            variableManager.MoneyCount += clothingPriceValue;
+            clothingEnabledButton.gameObject.SetActive(false);
+            isClothingActive = false;
+        }
+
+        UpdateUI();
+    }
 
 
 
